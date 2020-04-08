@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Kalam|Monoton|Montserrat|Playfair+Display|Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Rambla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="eventos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--libreria aos para el scroll-->
+    <script defer src="evento.js"></script>
+    <title>Eventos Privados</title>
+</head>
+<body>
+    <header class="top_bar"> 
+        
+        <div class="btn-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <img src="imagenes/logo.png" class="logo">
+        <div class="btn-header-container">
+            <button id="delivery" class="btn_header">Delivery</button>
+            <a href="trabajo.html" id="btn_trabajo" class="btn_header">Trabajá con nosotros</a>
+            <a href="index.html" id="btn_eventos" class="btn_header">Home</a>
+        </div>
+
+    </header>
+
+    <div class="grid-eventos">
+
+        <section class="card" data-aos="fade-right">
+            <img src="imagenes/eventos/img1.jpg" alt="" class="foto-ev">
+            <div class="info-ev">
+                <h2>Tu comodidad nos importa</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odit excepturi eligendi, ipsam sunt mollitia optio ipsum libero, necessitatibus voluptas ipsa! Sed porro sunt voluptas ut dolorem dolorum tenetur, est minus? Amet expedita magnam hic corporis similique enim tempora libero blanditiis cupiditate beatae sit, est et quam laudantium earum iusto voluptatem error! Consequatur cupiditate animi debitis rem id, inventore possimus praesentium recusandae pariatur aliquid, error vero, beatae adipisci sequi a illum ipsum corrupti dolorum impedit nobis ipsam explicabo minus neque nulla? Sit minus rerum asperiores eaque ab ratione animi, nostrum architecto doloremque soluta cum ipsum nemo delectus atque iusto in.</p> 
+            </div>
+        </section>
+
+        <section class="card" data-aos="fade-left">
+            <img src="imagenes/eventos/img2.jpg" alt="" class="foto-ev">
+            <div class="info-ev">
+                <h2>Tragos libres</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius repellendus maiores nemo laborum blanditiis! Laborum pariatur ad quam fuga doloribus necessitatibus aliquid commodi deserunt culpa odit quae velit quis neque, maiores aperiam dignissimos quos minima sit incidunt voluptas nulla possimus, dolores vitae! Ratione possimus beatae dignissimos minus architecto nostrum sunt, enim aperiam doloremque consectetur culpa perspiciatis laudantium id, ducimus numquam iste at. Quasi veniam sed architecto deleniti dignissimos, laudantium quo consectetur. Esse ea enim alias minima, porro quasi, tenetur at iste laborum optio architecto exercitationem odit eos ratione fugit deleniti suscipit aliquid quae, dolorum veniam laboriosam. Aperiam veniam nostrum voluptatum.</p> 
+            </div>
+        </section>
+
+        <section class="card" data-aos="fade-right">
+            <img src="imagenes/eventos/img3.jpg" alt="" class="foto-ev">
+            <div class="info-ev">
+                <h2>Servicio de catering</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, aspernatur, id accusantium laborum debitis at delectus error fugit adipisci voluptates cumque, exercitationem quam modi ducimus culpa corrupti sint pariatur dolores veritatis. Vitae expedita consequatur officia, necessitatibus animi impedit magnam, a, sequi excepturi hic numquam delectus obcaecati qui quae nihil culpa fuga rem soluta dignissimos! Autem, explicabo adipisci laboriosam maiores asperiores voluptatum nisi aperiam qui deleniti quasi libero necessitatibus, officia dolorum? Praesentium vel suscipit optio ipsam quae debitis facere excepturi. Veritatis necessitatibus eos dolor iusto molestiae. Sequi tempore est hic nihil labore libero tenetur aliquam. Accusamus fugiat officia aliquam assumenda consequatur!</p> 
+            </div>
+        </section>
+
+        
+        <section class="card" data-aos="fade-left">
+            <div class="info-ev">
+                <h2>Mandanos tu mensaje!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolore nihil harum earum corrupti officia laudantium, quo ducimus. Tenetur consequuntur dolores quia? Magni tempora iure, dolores laudantium facilis modi nihil? </p> 
+            </div>
+            <div id="formulario">
+                <form id="usrform"> <!--action="/action_page.php"  agregar para usar php y guardar datos-->
+                    <label for="fname">Nombre:</label><br>
+                    <input type="text" id="fname" name="fname" class="textbox"><br>
+                    <label for="lname">Apellido:</label><br>
+                    <input type="text" id="lname" name="lname" class="textbox"><br>
+                    <label for="email">Ingresá tu email:</label><br>
+                    <input type="email" id="email" name="email" class="textbox"><br><br>
+                    <textarea rows="6" cols="60" name="comment" form="usrform" id="text_area"></textarea><br>
+                    <input id="submit_button" type="submit" value="Enviar"><br>
+                  </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div>
+            <p> Sprout Burger Co. <span> Av. Alem 400, BAHIA BLANCA, BS. AS, 8000, ARGENTINA (154) 385-3689 INFO@Sproutburger.com</span></p><br>
+            <p> &copy 2019 SPROUT BURGER</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  <!--libreria aos para el scroll-->
+    <script>
+      AOS.init({
+          offset:200,
+          duration:1000
+      });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Kalam|Monoton|Montserrat|Playfair+Display|Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Sprout Burger | Bienvenido </title>
+</head>
+
+<body>
+    <header class="top_bar"> 
+        <!-- divs para formar el menu hamburguesa, solo se ve cuando se reduce la pantalla-->
+        <div class="btn-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <!--logo y botones para ir a diferentes secciones-->
+        <img src="imagenes/logo.png" class="logo">
+        <div class="btn-header-container">
+            <button id="delivery" class="btn_header">Delivery</button>
+            <a href="trabajo.html" id="btn_trabajo" class="btn_header">Trabajá con nosotros</a>
+            <a href="eventos.html" id="btn_eventos" class="btn_header">Eventos privados</a>
+        </div>
+    </header>
+
+    <!-- el wrap contiene los sliders con las imagenes-->
+    <div class="wrap">
+        <div id="flecha-izq" class="flecha"></div>
+            <div id="slider">
+
+                <div class="slide slide1">
+                    <div class="slide-contenido">
+                        <button class="reservas">Reservá tu mesa</button>
+                    </div>
+                </div>
+
+                <div class="slide slide2">
+                    <div class="slide-contenido">
+                        <button class="reservas">Reservá tu mesa</button>
+                    </div>
+                </div>
+
+                <div class="slide slide3">
+                    <div class="slide-contenido">
+                        <button class="reservas">Reservá tu mesa</button>
+                    </div>
+                </div>
+
+                <div class="slide slide4">
+                    <div class="slide-contenido">
+                        <button class="reservas">Reservá tu mesa</button>
+                    </div>
+                </div>
+
+                <div class="slide slide5">
+                    <div class="slide-contenido">
+                        <button class="reservas">Reservá tu mesa</button>
+                    </div>
+                </div>
+
+            </div>
+        <div id="flecha-der" class="flecha"></div>
+    </div>
+
+    <!-- pequeña descripcion y botones con lightbox (modal)-->
+    <div class="main">
+        <div class="descripcion">
+            <h1> El mejor lugar en Bahía, todo lo que necesitas, lo tenemos.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eveniet fugiat possimus ipsa at, enim unde? Alias, ipsum, dolores, nobis nesciunt eum non consectetur aut quas voluptates at accusantium.</p>
+        </div>
+
+        <div class="barra">
+            <button id="btn_des" class="btn_barra">desayuno & merienda</button>
+            <button id="btn_alm" class="btn_barra">almuerzo & cena</button>
+            <button id="btn_pos" class="btn_barra">postres</button>
+            <button id="btn_hap" class="btn_barra">happy hour</button>
+
+            <!-- exterior del lightbox, en negro, para que cuando hagas click afuera del lightbox se cierre-->
+            <div id="myModal" class="modal">
+                <!-- Modal content, cuando apretas los botones sale un popUp con texto -->
+                <div class="modal-content">
+                    <!-- header con el nombre del boton apretado, no es necesario poner los titulos aca-->
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 id="titulo_0">Desayuno & Merienda </h2>
+                    </div>
+                    <!-- el body con descripcion del menu -->
+                    <div class="modal-body">
+                        <div>
+                            <h4 id="titulo_1">Licuados</h4>
+                            <p id="parrafo_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A neque eum similique ullam exercitationem perspiciatis sapiente sequi incidunt odio tempora molestiae unde, aliquam rerum iure sed illum quis distinctio animi.</p>
+                            <h4 id="titulo_2">Facturas</h4>
+                            <p id="parrafo_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga obcaecati dolorem, nam tempora eum magni quasi expedita, nesciunt, illum rerum quo laboriosam maxime voluptas natus? Ullam modi exercitationem quos.</p>
+                        </div>
+                        <div>
+                            <h4 id="titulo_3">Tostados</h4>
+                            <p id="parrafo_3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, quia? Reiciendis earum ad impedit suscipit perferendis laudantium, dolorem, sint nisi numquam quas itaque, tempora maiores autem provident fugit voluptates quidem!</p>
+                            <h4 id="titulo_4">Pancakes</h4>
+                            <p id="parrafo_4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vitae autem cumque necessitatibus error eligendi placeat, voluptas consectetur rem, quae soluta odio nobis quis ab eos? Labore earum ab unde?</p>
+                        </div>    
+                    </div>
+
+                </div>
+             
+            </div>
+
+        </div>
+
+        <!--seccion con información de contacto-->
+        <div class="informacion">
+            <div class="flex-item">
+                <h4>UBICACIÓN</h4>
+                <p>400 Av. Alem</p>
+                <p>Bahía Blanca, Buenos Aires.</p>
+            </div>
+
+            <div class="flex-item">
+                <h4>HORARIO</h4>
+                <p>Dom. Lun., 9am – 00am</p>
+                <p>Mar. – Sab., 9am – 02am</p>
+            </div>
+
+            <div class="flex-item">
+                <h4>CONTACTO</h4>
+                <p>291-3855-3689</p>
+            </div>
+        </div>
+
+        <!-- 6 grids con imágenes y descripción -->
+        <div class="grid-container">
+            <!--2 grids-->
+            <div class="item-a item-hover">
+                <h1 class="titulo-img">BURGERS</h1>
+            </div>
+            <div class="item-a-text">
+                <h2 class="titulo-grid">AFICIONADO DE LAS BURGERS?</h2>
+                <p class="parrafo-grid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quas voluptas veniam delectus voluptatum nesciunt iure earum numquam nulla porro voluptatem reprehenderit, nostrum saepe atque eveniet voluptatibus fugit, dolore natus!</p>
+                <button id="btn_burguer" class="btn-grid">DESCUBRÍ MÁS</button>
+            </div>
+            <!--2 grids-->
+            <div class="item-b item-hover">
+                <h1 class="titulo-img">CERVEZAS</h1>
+            </div>
+            <div class="item-b-text">
+                <h2 class="titulo-grid">ELABORAMOS NUESTRAS PROPIAS BIRRAS</h2>
+                <p class="parrafo-grid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quas voluptas veniam delectus voluptatum nesciunt iure earum numquam nulla porro voluptatem reprehenderit, nostrum saepe atque eveniet voluptatibus fugit, dolore natus!</p>
+                <button id="btn_cerveza" class="btn-grid">DESCUBRÍ MÁS</button>
+            </div>
+            <!--2 grids-->
+            <div class="item-c item-hover">
+                <h1 class="titulo-img">PANCAKES</h1>
+            </div>
+            <div class="item-c-text">
+                <h2 class="titulo-grid">A CUALQUIER HORA</h2>
+                <p class="parrafo-grid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quas voluptas veniam delectus voluptatum nesciunt iure earum numquam nulla porro voluptatem reprehenderit, nostrum saepe atque eveniet voluptatibus fugit, dolore natus!</p>
+                <button id="btn_desayuno" class="btn-grid">DESCUBRÍ MÁS</button>
+            </div>
+        </div>
+
+        <!-- popUps cuando se hacen clicks en los botones de los grids -->
+        <!-- campo negro que se ve afuera del contenido -->
+        <div id="grid_modal" class="grid_modal">
+            <!-- Contenido del Modal y Slider-->
+            <div class="background_modal_grid">
+
+                <div>
+                    <span id="close_modal">&times;</span>
+                </div>
+
+                <div class="contenido_modal_grid"> 
+
+                        <div id="flecha_izq_modal" class="flecha_modal"></div>
+                        <!-- *************************************************-->
+                        <!-- primer lightbox (burgers) -->
+                        <div class="slide_modal slide1_modal"> </div>
+                        <div class="slide_modal slide2_modal"> </div>
+                        <div class="slide_modal slide3_modal"> </div>
+                        <div class="slide_modal slide4_modal"> </div>      
+                        <div class="slide_modal slide5_modal"> </div>
+                        <!-- segundo lightbox (cervezas) -->
+                        <div class="slideCerv_modal slideCerv1_modal"> </div>
+                        <div class="slideCerv_modal slideCerv2_modal"> </div>
+                        <div class="slideCerv_modal slideCerv3_modal"> </div>
+                        <div class="slideCerv_modal slideCerv4_modal"> </div>      
+                        <div class="slideCerv_modal slideCerv5_modal"> </div>
+                        <!-- tercer lightbox (pancakes) -->
+                        <div class="slidePan_modal slidePan1_modal"> </div>
+                        <div class="slidePan_modal slidePan2_modal"> </div>
+                        <div class="slidePan_modal slidePan3_modal"> </div>
+                        <div class="slidePan_modal slidePan4_modal"> </div>      
+                        <div class="slidePan_modal slidePan5_modal"> </div>
+                        <!-- *************************************************-->
+                        <div id="flecha_der_modal" class="flecha_modal"></div>
+                </div>
+
+            </div>     
+        </div>
+
+        <!-- última sección, mapa y instagram -->
+        <div class="grid-feed">
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.631315330492!2d-62.26618218598274!3d-38.71056123741086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcab23577e61%3A0x32819102420702e9!2sAv.%20Alem%20400%2C%20Bah%C3%ADa%20Blanca%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1579976007153!5m2!1sen!2sar" width="800" height="500" frameborder="0" style="border:1px solid #BCE7FD;" allowfullscreen=""></iframe>
+            </div>
+            <div id="instagram-feed">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B7otX9uJ6u_/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B7otX9uJ6u_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B7otX9uJ6u_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida por Burger, Inc. NYC 🍔🔥 (@burgerincnyc)</a> el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-01-22T20:55:02+00:00">22 de Ene de 2020 a las 12:55 PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div>
+            <p> Sprout Burger Co. <span> Av. Alem 400, BAHIA BLANCA, BS. AS, 8000, ARGENTINA (154) 385-3689 INFO@Sproutburger.com</span></p><br>
+            <p> &copy 2019 SPROUT BURGER</p>
+        </div>
+    </footer>
+</body>
+</html>
