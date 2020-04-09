@@ -61,11 +61,11 @@ a {
     background-repeat:no-repeat;
 }
 
-.slide1{background-image:url(/imagenes/slider/img5.jpg)}
-.slide2{background-image:url(/imagenes/slider/img2.jpg)}
-.slide3{background-image:url(/imagenes/slider/img3.jpg)}
-.slide4{background-image:url(/imagenes/slider/img4.jpg)}
-.slide5{background-image:url(/imagenes/slider/img1.jpg)}
+.slide1{background-image:url(imagenes/slider/img5.jpg)}
+.slide2{background-image:url(imagenes/slider/img2.jpg)}
+.slide3{background-image:url(imagenes/slider/img3.jpg)}
+.slide4{background-image:url(imagenes/slider/img4.jpg)}
+.slide5{background-image:url(imagenes/slider/img1.jpg)}
 
 .slide-contenido{
     display:flex;
@@ -520,25 +520,25 @@ a {
 } 
 
 /* imagenes para el primer lightbox (burgers) */
-.slide1_modal{background-image:url(/imagenes/modal/slider1/slide1.jpg)}
-.slide2_modal{background-image:url(/imagenes/modal/slider1/slide2.jpg)}
-.slide3_modal{background-image:url(/imagenes/modal/slider1/slide3.jpg)}
-.slide4_modal{background-image:url(/imagenes/modal/slider1/slide4.jpg)}
-.slide5_modal{background-image:url(/imagenes/modal/slider1/slide5.jpg)}
+.slide1_modal{background-image:url(/imagenes/Modal/slider1/slide1.jpg)}
+.slide2_modal{background-image:url(/imagenes/Modal/slider1/slide2.jpg)}
+.slide3_modal{background-image:url(/imagenes/Modal/slider1/slide3.jpg)}
+.slide4_modal{background-image:url(/imagenes/Modal/slider1/slide4.jpg)}
+.slide5_modal{background-image:url(/imagenes/Modal/slider1/slide5.jpg)}
 
 /* imagenes para el segundo lightbox (cervezas) */
-.slideCerv1_modal{background-image:url(/imagenes/modal/slider2/slide1.jpg)}
-.slideCerv2_modal{background-image:url(/imagenes/modal/slider2/slide2.jpg)}
-.slideCerv3_modal{background-image:url(/imagenes/modal/slider2/slide3.jpg)}
-.slideCerv4_modal{background-image:url(/imagenes/modal/slider2/slide4.jpg)}
-.slideCerv5_modal{background-image:url(/imagenes/modal/slider2/slide5.jpg)}
+.slideCerv1_modal{background-image:url(/imagenes/Modal/slider2/slide1.jpg)}
+.slideCerv2_modal{background-image:url(/imagenes/Modal/slider2/slide2.jpg)}
+.slideCerv3_modal{background-image:url(/imagenes/Modal/slider2/slide3.jpg)}
+.slideCerv4_modal{background-image:url(/imagenes/Modal/slider2/slide4.jpg)}
+.slideCerv5_modal{background-image:url(/imagenes/Modal/slider2/slide5.jpg)}
 
 /* imagenes para el tercer lightbox (pancakes) */
-.slidePan1_modal{background-image:url(/imagenes/modal/slider3/slide1.jpg)}
-.slidePan2_modal{background-image:url(/imagenes/modal/slider3/slide2.jpg)}
-.slidePan3_modal{background-image:url(/imagenes/modal/slider3/slide3.jpg)}
-.slidePan4_modal{background-image:url(/imagenes/modal/slider3/slide4.jpg)}
-.slidePan5_modal{background-image:url(/imagenes/modal/slider3/slide5.jpg)}
+.slidePan1_modal{background-image:url(/imagenes/Modal/slider3/slide1.jpg)}
+.slidePan2_modal{background-image:url(/imagenes/Modal/slider3/slide2.jpg)}
+.slidePan3_modal{background-image:url(/imagenes/Modal/slider3/slide3.jpg)}
+.slidePan4_modal{background-image:url(/imagenes/Modal/slider3/slide4.jpg)}
+.slidePan5_modal{background-image:url(/imagenes/Modal/slider3/slide5.jpg)}
 
 /* ------------------------------------------------------------------------------------------- */
 /* de acuerdo a la pantalla*/
